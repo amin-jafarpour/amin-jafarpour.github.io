@@ -1,1 +1,303 @@
-...
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Amin Jafarpour – Curriculum Vitae</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+        :root {
+            --text: #1f2933;
+            --muted: #6b7280;
+            --accent: #2563eb;
+            --bg: #ffffff;
+            --section-gap: 2rem;
+        }
+
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                         Roboto, Helvetica, Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        .page {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 24px;
+        }
+
+        /* Header */
+        header {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 24px;
+            align-items: center;
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 24px;
+            margin-bottom: var(--section-gap);
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.4rem;
+            letter-spacing: -0.02em;
+        }
+
+        .subtitle {
+            color: var(--muted);
+            margin-top: 4px;
+            font-size: 1rem;
+        }
+
+        /* Profile image */
+        .profile-pic {
+            width: 140px;
+            height: 140px;
+            border-radius: 8px;
+            object-fit: cover;
+            border: 1px solid #e5e7eb;
+        }
+
+        section {
+            margin-bottom: var(--section-gap);
+        }
+
+        section h2 {
+            font-size: 1.4rem;
+            margin-bottom: 12px;
+            color: var(--accent);
+            border-bottom: 1px solid #e5e7eb;
+            padding-bottom: 6px;
+        }
+
+        .item {
+            margin-bottom: 16px;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 8px;
+            font-weight: 600;
+        }
+
+        .item-sub {
+            color: var(--muted);
+            font-size: 0.95rem;
+            margin-bottom: 6px;
+        }
+
+        ul {
+            margin: 6px 0 0 20px;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 6px;
+        }
+
+        .activities p {
+            margin: 6px 0;
+        }
+
+        @media (max-width: 640px) {
+            header {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .profile-pic {
+                margin: 0 auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+<div class="page">
+
+    <header>
+        <div>
+            <h1>Amin Jafarpour</h1>
+            <div class="subtitle">
+                Bachelor of Science in Applied Computer Science
+            </div>
+        </div>
+
+        <!-- Replace src with your uploaded image filename -->
+        <img
+            src="./imgs/profile.png"
+            alt="Profile photo of Amin Jafarpour"
+            class="profile-pic"
+        />
+    </header>
+
+    <section>
+        <h2>Education</h2>
+
+        <div class="item">
+            <div class="item-header">
+                <span>Bachelor of Science in Applied Computer Science</span>
+                <span>Sep 2023 – Dec 2025</span>
+            </div>
+            <div class="item-sub">
+                British Columbia Institute of Technology, Burnaby, B.C.
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="item-header">
+                <span>Diploma of Computer Science Technology</span>
+                <span>Sep 2021 – Jul 2023</span>
+            </div>
+            <div class="item-sub">
+                British Columbia Institute of Technology, Burnaby, B.C.
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="item-header">
+                <span>Associate Certificate of Applied Software Development</span>
+                <span>Apr 2020 – Aug 2021</span>
+            </div>
+            <div class="item-sub">
+                British Columbia Institute of Technology, Burnaby, B.C.
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="item-header">
+                <span>High School Diploma</span>
+                <span>Sep 2016 – Jun 2020</span>
+            </div>
+            <div class="item-sub">
+                Carson Graham Secondary, North Vancouver, B.C.
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Experience & Projects</h2>
+
+        <div class="item">
+            <div class="item-header">
+                <span>MicroPentesters – Capstone Project</span>
+                <span>Jan 2025 – Dec 2025</span>
+            </div>
+            <ul>
+                <li>Used ESP32 SoCs for USB, Wi-Fi, and Bluetooth penetration testing</li>
+                <li>Injected keystrokes and mouse events via ESP-NOW (real-time and pre-recorded)</li>
+                <li>Performed evil twin attacks and distributed wardriving</li>
+                <li>Implemented Bluetooth spoofing techniques</li>
+            </ul>
+        </div>
+
+        <div class="item">
+            <div class="item-header">
+                <span>Rootkit – Term Project</span>
+                <span>Apr 2025 – Jul 2025</span>
+            </div>
+            <ul>
+                <li>Developed an educational rootkit</li>
+                <li>Researched IDS/IPS evasion techniques</li>
+                <li>Implemented covert channels, keylogging, file transfer, and reverse shell</li>
+                <li>Authored static and dynamic reverse-engineering documentation</li>
+            </ul>
+        </div>
+
+        <div class="item">
+            <div class="item-header">
+                <span>Distributed Hash Cracker – Student Project</span>
+                <span>Jan 2025 – Apr 2025</span>
+            </div>
+            <ul>
+                <li>Designed a fault-tolerant distributed password-cracking system</li>
+                <li>Supported MD5, SHA-256, SHA-512, bcrypt, and yescrypt</li>
+                <li>Gained mastery of the Go programming language</li>
+            </ul>
+        </div>
+
+        <div class="item">
+            <div class="item-header">
+                <span>Secure File Transfer – Student Project</span>
+                <span>Apr 2024 – Jul 2024</span>
+            </div>
+            <ul>
+                <li>Implemented secure file transfer over untrusted networks</li>
+                <li>Used Diffie–Hellman key exchange</li>
+                <li>Applied Feistel-based encryption</li>
+            </ul>
+        </div>
+
+        <div class="item">
+            <div class="item-header">
+                <span>Reliable Transport Protocol – Student Project</span>
+                <span>Jan 2024 – Apr 2024</span>
+            </div>
+            <ul>
+                <li>Built a TCP-like protocol using raw IP packets</li>
+                <li>Produced detailed design and testing documentation</li>
+            </ul>
+        </div>
+
+        <div class="item">
+            <div class="item-header">
+                <span>Last Blast – Term Project</span>
+                <span>Sep 2023 – Dec 2023</span>
+            </div>
+            <ul>
+                <li>Developed a first-person shooter in Unity</li>
+                <li>Worked with Unity physics and rasterization</li>
+            </ul>
+        </div>
+
+        <div class="item">
+            <div class="item-header">
+                <span>TechPOS – Industry-Sponsored Project</span>
+                <span>Apr 2023 – Jun 2023</span>
+            </div>
+            <ul>
+                <li>Built cross-platform Android/iOS app using .NET MAUI</li>
+                <li>Maintained daily communication with business stakeholders</li>
+            </ul>
+        </div>
+
+        <div class="item">
+            <div class="item-header">
+                <span>Travel Bud – Term Project</span>
+                <span>Sep 2022 – Dec 2022</span>
+            </div>
+            <ul>
+                <li>Developed Android tourism application</li>
+                <li>Designed mobile UI and Flutter widgets</li>
+            </ul>
+        </div>
+
+        <div class="item">
+            <div class="item-header">
+                <span>DollarTrack – Student Project</span>
+                <span>Apr 2021 – Jun 2021</span>
+            </div>
+            <ul>
+                <li>Built a full-stack financial web application</li>
+                <li>Integrated Visa API and MySQL backend</li>
+                <li>Worked in a collaborative development team using Git</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="activities">
+        <h2>Extracurricular Activities</h2>
+        <p>Working with Arduino boards and sensors</p>
+        <p>Tinkering with FPGA boards</p>
+        <p>Regularly attending technology conferences and meetups</p>
+    </section>
+
+</div>
+</body>
+</html>
+
