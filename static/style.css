@@ -176,7 +176,129 @@ li {
     }
 }
 
+/* Page layout */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #d9d9d9;
+}
+
+
+/* Sidebar / profile section */
+
+.sidebar {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+    padding: 25px;
+    text-align: center;
+}
+
+
+/* Name */
+
+.sidebar h1 {
+    font-size: 34px;
+    margin: 10px 0;
+    color: #2f373d;
+}
+
+
+/* Links */
+
+.sidebar a {
+    color: blue;
+    text-decoration: underline;
+    margin: 0 6px;
+}
+
+
+/* Info text */
+
+.info {
+    margin-top: 12px;
+    color: #3a3a3a;
+    font-size: 16px;
+}
+
+
+/* Menu container */
+
 .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    margin-top: 28px;
+    width: 100%;
+}
+
+
+/* Buttons */
+
+.menu-btn {
+
+    width: 90%;
+    max-width: 260px;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    padding: 14px 20px;
+
+    border-radius: 10px;
+    border: 2px solid transparent;
+
+    background: #2c2c2c;
+    color: white;
+
+    cursor: pointer;
+
+    transition: all 0.25s ease;
+}
+
+
+/* Hover effect */
+
+.menu-btn:hover {
+    background: white;
+    color: #2c2c2c;
+    border: 2px solid #2c2c2c;
+}
+
+
+/* Click effect */
+
+.menu-btn:active {
+    transform: scale(0.97);
+}
+
+
+/* Profile image */
+
+.profile-img {
+    margin-top: 30px;
+    width: 200px;
+    border-radius: 16px;
+}
+
+
+/* Desktop layout */
+
+@media (min-width: 768px) {
+
+    .sidebar {
+        max-width: 360px;
+    }
+
+    .menu {
+        flex-direction: column;
+    }
+
+}
+
+/* .menu {
     display: flex;
     gap: 20px;
     justify-content: center;
@@ -207,4 +329,4 @@ li {
 
 .menu-btn:active {
     transform: translateY(0);
-}
+} */
