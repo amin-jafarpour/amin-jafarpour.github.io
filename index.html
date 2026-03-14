@@ -1,197 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
-    <title>Amin Jafarpour – Curriculum Vitae</title>
+    <title>Amin Jafarpour - Curriculum Vitae</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="static/style.css">
+    <script src="static/script.js"></script>
 
-    <style>
-        :root {
-            --text: #1f2933;
-            --muted: #6b7280;
-            --accent: #2563eb;
-            --bg: #f8fafc;
-            --card: #ffffff;
-            --border: #e5e7eb;
-            --section-gap: 2rem;
-        }
-
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            margin: 0;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background: var(--bg);
-            color: var(--text);
-            line-height: 1.6;
-        }
-
-        .page {
-            max-width: 980px;
-            margin: 40px auto;
-            padding: 0 24px 40px;
-        }
-
-        .card {
-            background: var(--card);
-            border: 1px solid var(--border);
-            border-radius: 18px;
-            box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
-            overflow: hidden;
-        }
-
-        header {
-            display: grid;
-            grid-template-columns: 1fr auto;
-            gap: 24px;
-            align-items: center;
-            padding: 32px;
-            border-bottom: 1px solid var(--border);
-        }
-
-        h1 {
-            margin: 0;
-            font-size: 2.5rem;
-            letter-spacing: -0.03em;
-            line-height: 1.05;
-        }
-
-        .subtitle {
-            color: var(--muted);
-            margin-top: 8px;
-            font-size: 1.05rem;
-        }
-
-        .contact-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin-top: 18px;
-        }
-
-        .contact-pill {
-            display: inline-flex;
-            align-items: center;
-            padding: 8px 12px;
-            border: 1px solid var(--border);
-            border-radius: 999px;
-            background: #f8fafc;
-            color: var(--text);
-            font-size: 0.92rem;
-            text-decoration: none;
-        }
-
-        .profile-pic {
-            width: 150px;
-            height: 150px;
-            border-radius: 14px;
-            object-fit: cover;
-            border: 1px solid var(--border);
-            background: #fff;
-        }
-
-        .content {
-            padding: 32px;
-        }
-
-        section {
-            margin-bottom: var(--section-gap);
-        }
-
-        section:last-child {
-            margin-bottom: 0;
-        }
-
-        section h2 {
-            font-size: 1.35rem;
-            margin: 0 0 14px;
-            color: var(--accent);
-            border-bottom: 1px solid var(--border);
-            padding-bottom: 8px;
-        }
-
-        .summary {
-            color: var(--text);
-            font-size: 1rem;
-            margin: 0;
-        }
-
-        .item {
-            margin-bottom: 18px;
-        }
-
-        .item:last-child {
-            margin-bottom: 0;
-        }
-
-        .item-header {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            gap: 8px;
-            font-weight: 700;
-        }
-
-        .item-sub {
-            color: var(--muted);
-            font-size: 0.96rem;
-            margin: 4px 0 6px;
-        }
-
-        ul {
-            margin: 8px 0 0 20px;
-            padding: 0;
-        }
-
-        li {
-            margin-bottom: 6px;
-        }
-
-        .skills-list {
-            margin: 0;
-            padding-left: 20px;
-        }
-
-        @media (max-width: 700px) {
-            .page {
-                margin: 20px auto;
-                padding: 0 14px 24px;
-            }
-
-            header {
-                grid-template-columns: 1fr;
-                text-align: center;
-                padding: 24px;
-            }
-
-            .contact-list {
-                justify-content: center;
-            }
-
-            .profile-pic {
-                margin: 0 auto;
-            }
-
-            .content {
-                padding: 24px;
-            }
-
-            .item-header {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-        }
-    </style>
 </head>
+
 <body>
     <div class="page">
         <div class="card">
             <header>
                 <div>
                     <h1>Amin Jafarpour</h1>
-                    <div class="subtitle">Curriculum Vitae</div>
 
                     <div class="contact-list" aria-label="Contact and profile details">
                         <a href="mailto:aminjafarpour82@gmail.com">Email</a>
@@ -200,200 +24,23 @@
                         <span>Canadian Citizen</span>
                         <span>North Vancouver, B.C.</span>
                     </div>
+
+                    <br>
+
+                    <div>
+                        <button class="menu-btn" onclick="fillPage('static/cv.html', 'conforegroundtentFrame')">Curriculum
+                            Vitae</button>
+                        <button class="menu-btn" onclick="fillPage('static/nonprofit', 'foreground')">Projects</button>
+                        <button class="menu-btn" onclick="fillPage('static/projects', 'foreground')">Non-profit</button>
+                    </div>
                 </div>
 
-                <img
-                    src="./imgs/profile.png"
-                    alt="Profile photo of Amin Jafarpour"
-                    class="profile-pic"
-                />
+                <img src="./imgs/profile.png" alt="Profile photo of Amin Jafarpour" class="profile-pic" />
             </header>
 
-            <div class="content">
-                <section>
-                    <h2>Overview</h2>
-                    <p class="summary">
-                        I am a Master's student at BCIT conducting research in the field of Internet of Things Security (IoTSec). I received my Bachelor's degree in Computer Science from BCIT with distinction. In my undergrad years, I specialized in network security and programming language paradigms.
-                    </p>
-                </section>
 
-                <section>
-                    <h2>Education</h2>
+            <div id="foreground"></div>
 
-                    <div class="item">
-                        <div class="item-header">
-                            <span>Master of Science in Applied Computing</span>
-                            <span>Sep 2026 – Apr 2028</span>
-                        </div>
-                        <div class="item-sub">British Columbia Institute of Technology, Burnaby, B.C.</div>
-                    </div>
-
-                    <div class="item">
-                        <div class="item-header">
-                            <span>Bachelor of Science in Applied Computer Science</span>
-                            <span>Sep 2023 – Dec 2025</span>
-                        </div>
-                        <div class="item-sub">British Columbia Institute of Technology, Burnaby, B.C.</div>
-                    </div>
-
-                    <div class="item">
-                        <div class="item-header">
-                            <span>Diploma of Computer Science Technology</span>
-                            <span>Sep 2021 – Jul 2023</span>
-                        </div>
-                        <div class="item-sub">British Columbia Institute of Technology, Burnaby, B.C.</div>
-                    </div>
-
-                    <div class="item">
-                        <div class="item-header">
-                            <span>Associate Certificate of Applied Software Development</span>
-                            <span>Apr 2020 – Aug 2021</span>
-                        </div>
-                        <div class="item-sub">British Columbia Institute of Technology, Burnaby, B.C.</div>
-                    </div>
-
-                    <div class="item">
-                        <div class="item-header">
-                            <span>High School Diploma</span>
-                            <span>Sep 2016 – Jun 2020</span>
-                        </div>
-                        <div class="item-sub">Carson Graham Secondary, North Vancouver, B.C.</div>
-                    </div>
-                </section>
-
-                <section>
-                    <h2>Experience</h2>
-
-                    <div class="item">
-                        <div class="item-header">
-                            <span>MicroPentesters: Undergrad Capstone Project</span>
-                            <span>Jan 2025 – Dec 2025</span>
-                        </div>
-                        <ul>
-                            <li>Used ESP32 System-on-Chips (SoCs) to perform ethical penetration testing.</li>
-                            <li>Evaluated the feasibility of using ESP32 SoCs to identify and exploit USB, Wi-Fi, and Bluetooth based vulnerabilities.</li>
-                            <li>Used ESP32 SoCs to inject keystrokes and mouse clicks in real-time over the ESP-NOW protocol.</li>
-                            <li>Used ESP32 SoCs to perform an evil twin attack.</li>
-                            <li>Used ESP32 SoCs to perform distributed wardriving by placing multiple ESP32 SoCs in different locations and aggregating the findings.</li>
-                            <li>Used ESP32 SoCs to perform Bluetooth spoofing.</li>
-                        </ul>
-                    </div>
-
-                    <div class="item">
-                        <div class="item-header">
-                            <span>Educational Rootkit: Term Project</span>
-                            <span>Apr 2025 – Jul 2025</span>
-                        </div>
-                        <ul>
-                            <li>Developed a rootkit for educational purposes.</li>
-                            <li>Researched the implementation details of major Intrusion Detection systems and Intrusion Prevention Systems in order to bypass them.</li>
-                            <li>Used covert channels to hide malicious traffic within benign incoming and outgoing network traffic.</li>
-                            <li>Added software-based keylogger, file transfer, file watching, and reverse shell functionalities to the rootkit.</li>
-                            <li>Wrote a document showing how to perform static analysis and dynamic analysis techniques to reverse engineer the rootkit.</li>
-                        </ul>
-                    </div>
-
-                    <div class="item">
-                        <div class="item-header">
-                            <span>Distributed Hash Cracker: Student Project</span>
-                            <span>Jan 2025 – Apr 2025</span>
-                        </div>
-                        <ul>
-                            <li>Developed a password hash cracker capable of distributing the workload across a pool of computers.</li>
-                            <li>Leveraged distributed computing principles to make the distributed network reliable and fault-tolerant.</li>
-                            <li>Cracked MD5, SHA-256, SHA-512, bcrypt, and yescrypt password hashes.</li>
-                            <li>Mastered the Go programming language.</li>
-                        </ul>
-                    </div>
-
-                    <div class="item">
-                        <div class="item-header">
-                            <span>Secure File Transfer: Student Project</span>
-                            <span>Apr 2024 – Jul 2024</span>
-                        </div>
-                        <ul>
-                            <li>Used symmetric and asymmetric cryptography principles to develop a program capable of securely transferring files over untrusted networks.</li>
-                            <li>Used the Diffie–Hellman key exchange scheme to establish a common key.</li>
-                            <li>Used the Feistel cipher scheme to perform file encryption.</li>
-                        </ul>
-                    </div>
-
-                    <div class="item">
-                        <div class="item-header">
-                            <span>Reliable Transport Protocol: Student Project</span>
-                            <span>Jan 2024 – Apr 2024</span>
-                        </div>
-                        <ul>
-                            <li>Developed a reliable transport protocol similar to TCP by using raw IP packets.</li>
-                            <li>Wrote a technical design document capturing the protocol’s design and implementation details.</li>
-                            <li>Wrote a comprehensive testing document proving correctness of the protocol.</li>
-                        </ul>
-                    </div>
-
-                    <div class="item">
-                        <div class="item-header">
-                            <span>Last Blast: Team Project</span>
-                            <span>Sep 2023 – Dec 2023</span>
-                        </div>
-                        <ul>
-                            <li>Used the Unity game engine to develop a first-person shooter video game called Last Blast.</li>
-                            <li>Leveraged Unity’s physics library to stimulate the laws of physics in the game.</li>
-                            <li>Used rasterization to render game graphics.</li>
-                        </ul>
-                    </div>
-
-                    <div class="item">
-                        <div class="item-header">
-                            <span>TechPOS: Industry-Sponsored Student Project</span>
-                            <span>Apr 2023 – Jun 2023</span>
-                        </div>
-                        <ul>
-                            <li>Used the .NET framework and .NET MAUI to develop a cross-platform mobile application for Android as well as iOS.</li>
-                            <li>Communicated with the business on a daily basis to deliver project status updates.</li>
-                        </ul>
-                    </div>
-
-                    <div class="item">
-                        <div class="item-header">
-                            <span>Travel Bud: Term Project</span>
-                            <span>Sep 2022 – Dec 2022</span>
-                        </div>
-                        <ul>
-                            <li>Used Android Studio to develop an Android application targeted at tourism.</li>
-                            <li>Mastered mobile UI design.</li>
-                            <li>Used Flutter to develop UI widgets.</li>
-                        </ul>
-                    </div>
-
-                    <div class="item">
-                        <div class="item-header">
-                            <span>DollarTrack: Student Project</span>
-                            <span>Apr 2021 – Jun 2021</span>
-                        </div>
-                        <ul>
-                            <li>Used JavaScript, HTML, and CSS to develop a full-stack financial web application.</li>
-                            <li>Used Visa Card’s API to fetch transactions.</li>
-                            <li>Learned how to coexist within a team of developers.</li>
-                            <li>Used MySQL to store and categorize different transactions based on different attributes.</li>
-                            <li>Mastered the Git version control system.</li>
-                        </ul>
-                    </div>
-                </section>
-
-                <section>
-                    <h2>Technical Skills</h2>
-                    <ul class="skills-list">
-                        <li>Proficiency in Python3, Go, C, C++, JavaScript, Rust, Elixir, and OCaml programming languages.</li>
-                        <li>Proficiency in network protocols, including UDP, TCP, ICMP, SSH, HTTPS, and TLS/SSL.</li>
-                        <li>Proficiency in network security tools such as Nmap, Hping3, Wireshark, Netwox, and Scapy.</li>
-                        <li>Proficiency in Git, GitHub Actions, Docker, Debian/Linux, GDB, and VirtualBox technologies.</li>
-                        <li>Familiar with AES, Diffie–Hellman, RSA, ChaCha20 stream cipher, and Elliptic Curves.</li>
-                        <li>Familiar with distributed systems concepts such as Raft, Paxos, and Tendermint.</li>
-                        <li>Familiar with GPIO, SPI, I2C, DSI, CSI, and UART.</li>
-                    </ul>
-                </section>
-            </div>
-        </div>
-    </div>
 </body>
+
 </html>
