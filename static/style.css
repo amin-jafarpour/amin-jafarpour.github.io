@@ -208,3 +208,17 @@ li {
 .menu-btn:active {
     transform: translateY(0);
 }
+
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .menu-btn {
+        width: 80%;
+        max-width: 320px;
+        text-align: center;
+    }
+}
